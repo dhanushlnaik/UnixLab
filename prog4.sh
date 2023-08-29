@@ -14,7 +14,15 @@ case $op in
     echo "diff=$res";;
     '*')res=`expr $a \* $b`
     echo "product=$res";;
-    '/')res=`expr $a / $b`
-    echo "division=$res";;
+    '/')
+    if [ $b -eq 0 ]
+    then
+        echo "Division by 0"
+    else
+    res=`expr $a / $b`
+    echo "division=$res"
+    fi;;
     *)echo "invalid choice";;
     esac
+
+    
