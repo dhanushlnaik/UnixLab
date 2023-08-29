@@ -8,11 +8,13 @@ echo "Enter the Operation: "
 read op
 
 case $op in
-    '+' res=`expr $a+$b`
-    echo "sum=$y";;
-    '-' res=`expr $a-$b`
-    echo "sum=$y";;
-    '*' res=`expr $a\*$b`
-    echo "sum=$y";;
-    '/' res=`expr $a/$b`
-    echo "sum=$y";;
+    '+')res=`expr $a + $b`
+    echo "sum=$res";;
+    '-')res=`expr $a - $b`
+    echo "diff=$res";;
+    '*')res=`expr $a \* $b`
+    echo "product=$res";;
+    '/')res=`expr $a / $b`
+    echo "division=$res";;
+    *)echo "invalid choice";;
+    esac
