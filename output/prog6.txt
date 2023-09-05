@@ -1,0 +1,20 @@
+Enter the two file
+P prog1.sh
+Same Permissions
+---------------
+Owner permissions
+---------------
+READ
+WRITE
+NO EXECUTE
+---------------
+User permissions
+---------------
+READ
+WRITE
+---------------
+Owner permissions
+---------------
+READ
+WRITE
+NO EXECUTE
