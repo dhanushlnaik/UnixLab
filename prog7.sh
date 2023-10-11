@@ -20,5 +20,16 @@ then
     echo "$x"
 else
     echo "Invalid String > 6"
+    
 
 fi
+if [ -z "$string" ]
+    then
+        echo "null String"
+    else 
+        echo "Position of which letter?"
+        read l
+        z=`expr "$string" : "[^$l]*$l"`
+        echo "Character is in $z th position."
+    fi;;
+
